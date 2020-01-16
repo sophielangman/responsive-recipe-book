@@ -19,6 +19,10 @@ nav li {
   z-index: 300;
 }
 
+.indent {
+  text-indent: 25px;
+}
+
 /* skip links */
 
 .skip-links {
