@@ -6,6 +6,47 @@ html {
   font-family: "Brandon Grotesque", serif;
 }
 
+nav li {
+  display: inline-block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+}
+
+/* skip links */
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+  background-color: #ddffa6;
+  color: #000;
+  padding: .5em .75em;
+  text-decoration: none;
+}
+
+.skip-links a:focus {
+  top: 1em;
+}
+
+/** buttons **/
+
+a {
+  text-decoration: none;
+  text-align: left;
+}
+
 /** colours **/
 
 .dark-blue {
@@ -58,18 +99,45 @@ html {
 
 /** media queries **/
 
+@media only screen and (max-width: 25em) {
+
+  header {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 38em) {
+
+  .logo {
+    font-size: 1.4238rem;
+    line-height: 2.1rem;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
 
   .content {
     background-color: #e1eef5;
     position: absolute;
-    top: 16em;
+    top: 10em;
   }
 
   .banner {
     max-height: 500px;
     overflow: hidden;
     position: relative;
+  }
+
+  .beyonce {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .jayz {
+    display: flex;
+    justify-content: flex-end;
   }
 
 }
