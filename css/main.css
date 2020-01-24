@@ -23,7 +23,7 @@ nav li {
   text-indent: 25px;
 }
 
-.card-hover: hover {
+.card-hover:hover {
  background-color: #cfdce3;
  color: black;
 }
